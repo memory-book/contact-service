@@ -1,5 +1,4 @@
 name: Contact Service Build
-
 on:
   push:
     branches: main
@@ -29,7 +28,7 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mean-expressjs:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/contact-service:latest
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.MYTOKEN }}
       -
